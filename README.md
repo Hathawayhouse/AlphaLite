@@ -1,5 +1,5 @@
 # AlphaLite
-Full featured single node RotoHazard timer
+Full featured single node RotorHazard timer
 
 Usage Information
 
