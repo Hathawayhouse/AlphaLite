@@ -46,3 +46,7 @@ Our preference is that you DO NOT power your leds through the unit. However, the
 The unit itself needs ~1A, more at startup.
 This should leave enough to run a 24" flag pole of about 34 leds at max brightness or a RaceGOW gate of 110 leds at medium brightness.
 You are responsible for safe operation of your unit. An led power draw calculator can be found at https://wled-calculator.github.io
+
+Hardware Info
+
+The stm32f103 is connected to the Raspberry Pi Zero 2 W via its primary UART. Under RotorHazards advanced settings you will need to set the node address as "/dev/serial0"; "serial0" alone is not sufficient and may cause a lockout requiring you to manualy delete the config.json file to restore operation. 
