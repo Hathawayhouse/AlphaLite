@@ -54,3 +54,10 @@ You are responsible for safe operation of your unit. An led power draw calculato
 Hardware Info
 
 The stm32f103 is connected to the Raspberry Pi Zero 2 W via its primary UART. Under RotorHazards advanced settings you will need to set the node address as "/dev/serial0"; "serial0" alone is not sufficient and may cause a lockout requiring you to manualy delete the config.json file to restore operation. 
+
+Power Schemes
+
+There are several configurations in which this unit may be operated in.
+First is to use a usb pd board which then splits power to the timer's mr30 and gate leds individualy. This powers the led's directly rather than running the current through the timer.
+Secondly, you may power the timer via usb c, and directly power either a flag or a 24" gate via the mr30 for both power and signal. A minimum of 5v 1.5a supply needed, 3a recommended.
+You may provide both power and data over the usb c port. With the correct adapter you can run poe to your location, then convert to usb c + pd and get both hardwire data and power. i.e. xxxxx
