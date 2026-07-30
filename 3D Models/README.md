@@ -1,1 +1,3 @@
 Here Lies the 3D Models...
+
+*_NoConnector appended files are for builds with external connectors removed from the Raspberry Pi Zero 2w. Connector compatible versions tbd.
